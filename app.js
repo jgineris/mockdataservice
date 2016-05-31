@@ -14,8 +14,9 @@ router.get('/deviceinfo/:useremail', function(req, res) {
     var email = req.params.useremail;
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
         data = JSON.parse( data );
-        console.log( 'data[email]', data[email]);
-        res.json(data[email]);
+        var user = data[email];
+        if(user) res.json(user);
+        res.status(400).send('User could not be found');
     });
 });
 
