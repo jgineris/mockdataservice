@@ -16,7 +16,7 @@ router.get('/deviceinfo/:useremail', function(req, res) {
         data = JSON.parse( data );
         var user = data[email];
         if(user) res.json(user);
-        res.status(400).send('User could not be found');
+        else res.status(400).send('User could not be found');
     });
 });
 
