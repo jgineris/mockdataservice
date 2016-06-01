@@ -1,9 +1,21 @@
 {
+  "aaron_old@support.com": [{
+    "device": "ChargeHR",
+    "firmware": "18.033",
+    "lastSynch": "20160522+09:12",
+    "steps": "12392"
+  }],
   "adam@support.com": [{
     "device": "Charge",
     "firmware": "v110",
     "lastSynch": "20160529+11:12",
     "steps": "5796"
+  }],
+  "alex@support.com": [{
+    "device": "ChargeHR",
+    "firmware": "18.122",
+    "lastSynch": "20160529+11:12",
+    "steps": "12392"
   }],
   "alice@support.com": [{
     "device": "Alta",
