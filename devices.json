@@ -1,0 +1,56 @@
+{
+  "aaron_old@support.com": [{
+    "device": "ChargeHR",
+    "firmware": "18.033",
+    "lastSynch": "20160522+09:12",
+    "steps": "12392",
+    "platform":"Android"
+  }],
+  "adam@support.com": [{
+    "device": "Charge",
+    "firmware": "v110",
+    "lastSynch": "20160529+11:12",
+    "steps": "5796",
+    "platform":"iOS"
+  }],
+  "alex@support.com": [{
+    "device": "ChargeHR",
+    "firmware": "18.122",
+    "lastSynch": "20160529+11:12",
+    "steps": "12392",
+    "platform":"iOS"
+  }],
+  "alice@support.com": [{
+    "device": "Alta",
+    "firmware": "v102",
+    "lastSynch": "20160528+11:12",
+    "steps": "3412",
+    "platform":"Android"
+  }],
+  "bob@support.com": [{
+    "device": "Blaze",
+    "firmware": "v212",
+    "lastSynch": "20160528+11:12",
+    "steps": "3412",
+    "platform":"iOS"
+  }, {
+    "device": "Charge HR",
+    "firmware": "v203",
+    "lastSynch": "20160528+11:12",
+    "steps": "3412",
+    "platform":"iOS"
+  }, {
+    "device": "Flex",
+    "firmware": "v304",
+    "lastSynch": "20140322+11:12",
+    "steps": "17412",
+    "platform":"iOS"
+  }, {
+    "device": "Zip",
+    "firmware": "v102",
+    "lastSynch": "20160528+11:12",
+    "steps": "3412",
+    "platform":"iOS"
+  }],
+  "zak@support.com": []
+}

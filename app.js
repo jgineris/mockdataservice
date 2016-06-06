@@ -1,7 +1,10 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var fs = require("fs");
+var fs = require('fs');
+var deviceController = require('./controllers/device');
+var authController = require('./controllers/auth');
+var passport = require('passport');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -9,19 +12,22 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 8080;
 var router = express.Router();
 
+app.use(passport.initialize());
 
-router.get('/deviceinfo/:useremail', function(req, res) {
-    var email = req.params.useremail;
-    fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
-        data = JSON.parse( data );
-        var user = data[email];
-        if(user) res.json(user);
-        else res.status(400).send('User could not be found');
+router.get('/login',
+    authController.isAuthenticated,
+    function(req, res) {
+        res.json(req.user);
     });
-});
+
+router.get('/deviceinfo/:useremail', deviceController.getDeviceInfo);
 
 router.get('/hello', function(req, res) {
     res.json({ message: 'Hello world' });
+});
+
+router.get('/', function(req, res) {
+   res.json({message: 'Hi there!'});
 });
 
 app.use('/api', router);
