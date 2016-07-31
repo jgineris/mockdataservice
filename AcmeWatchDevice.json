@@ -1,0 +1,43 @@
+{
+  "adam@support.com": [{
+    "device": "Gamma",
+    "firmware": "v110",
+    "lastSynch": "20160529+11:12",
+    "platform":"iOS"
+  }],
+  "alice@support.com": [{
+    "device": "Alpha",
+    "firmware": "v102",
+    "lastSynch": "20160528+11:12",
+    "platform":"Android"
+  }],
+  "alex@support.com": [{
+    "device": "Beta",
+    "firmware": "v118",
+    "lastSynch": "20160529+11:12",
+    "platform":"iOS"
+  }],
+  "aaron_old@support.com": [{
+    "device": "Beta",
+    "firmware": "v091",
+    "lastSynch": "20160522+09:12",
+    "platform":"Android"
+  }],
+  "bob@support.com": [{
+    "device": "Alpha",
+    "firmware": "v102",
+    "lastSynch": "20160528+11:12",
+    "platform":"iOS"
+  }, {
+    "device": "Beta",
+    "firmware": "v118",
+    "lastSynch": "20160528+11:12",
+    "platform":"iOS"
+  }, {
+    "device": "Gamma",
+    "firmware": "v304",
+    "lastSynch": "20140322+11:12",
+    "platform":"iOS"
+  }],
+  "zak@support.com": []
+}
